@@ -45,8 +45,6 @@ html body {
     overflow-y: scroll !important;
 }
 
-/* ========================= CONTEXT MENU Z-INDEX FIX ========================= */
-/* Styles for context-menu-fix.plugin.js */
 
 /* Portal wrapper created by context-menu-fix plugin */
 .context-menu-portal {
@@ -325,6 +323,9 @@ html body {
 /* Style any menu/button container in the top nav */
 #app
     nav[class*="horizontal-nav-bar"]
+    > div[class*="button-container"],
+#app
+    nav[class*="horizontal-nav-bar"]
     [class*="buttons-container"]
     > div[class*="button-container"],
 #app
@@ -492,6 +493,19 @@ html body {
     margin-right: 11px;
 }
 
+.toasts-container-oKECy .toast-item-container-nG0uk {
+    background: rgba(70, 70, 70, 0.22) !important;
+    border-radius: 20px !important;
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        0 4px 16px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.15),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+    backdrop-filter: var(--backdrop-filter) !important;
+    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+    opacity: 1 !important;
+}
+
 /* title container */
 [class*="meta-item-container"] [class*="title-bar-container"] {
     display: flex;
@@ -551,11 +565,16 @@ html body {
     min-height: 1.3rem;
 }
 
-.meta-item-container-Tj0Ib
-    .title-bar-container-1Ba0x
-    .menu-label-container-ChuX8
-    .icon-gh1t9 {
+.meta-item-container-Tj0Ib .title-bar-container-1Ba0x .menu-label-container-ChuX8 .icon-gh1t9 {
     visibility: hidden;
+}
+
+.meta-item-container-Tj0Ib .poster-container-qkw48 .new-videos-cwuD9 .layer-dQmEe .icon-gh1t9 {
+    color: rgb(157, 157, 157);
+}
+
+.meta-item-container-Tj0Ib .poster-container-qkw48 .new-videos-cwuD9 .layer-dQmEe .label-ZZ2m7 {
+    color: rgb(157, 157, 157);
 }
 
 [class*="meta-item-container"] [class*="title-bar-container"] [class*="title"],
@@ -725,8 +744,9 @@ html body {
 }
 
 .calendar-cH2jw .content-wBwrQ {
-    margin-top: 6rem !important;
-    padding: 0 !important;
+    padding-top: 6rem !important;
+    padding-bottom: 14px !important;
+    padding-left: 14px !important;
 }
 
 .addons-container-ogGYu
@@ -751,7 +771,7 @@ html body {
     .discover-content-CRsRg
     .catalog-container-VNK_T
     .meta-items-container-n8vNz {
-    align-items: center;
+    align-items: start;
     align-self: stretch;
     display: grid;
     flex: 1;
@@ -1701,20 +1721,6 @@ body.ghost-clicking #heroLoadingScreen {
     border: 1px solid rgba(255, 255, 255, 0.04) !important;
 }
 
-.addons-container-ogGYu
-    .addons-content-zhFBl
-    .selectable-inputs-container-tUul1
-    .select-input-container-KqG8N {
-    background: rgba(70, 70, 70, 0.22) !important;
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.2),
-        0 4px 16px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
-    backdrop-filter: var(--backdrop-filter) !important;
-    border: 1px solid rgba(255, 255, 255, 0.04) !important;
-}
-
 .add-addon-modal-container-KR5ny
     .modal-dialog-content-Xgv7Z
     .addon-url-input-ucetZ:focus,
@@ -1756,12 +1762,10 @@ body.ghost-clicking #heroLoadingScreen {
 .cell-l3eWl.today-G8kuO .heading-TYXvp .day-nttmc {
     background: rgba(70, 70, 70, 0.22) !important;
     box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.2),
-        0 4px 16px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
+        0 2px 8px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
     backdrop-filter: var(--backdrop-filter) !important;
-    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .shortcut-container-iOrn9 kbd {
@@ -1775,23 +1779,8 @@ body.ghost-clicking #heroLoadingScreen {
     border: 1px solid rgba(255, 255, 255, 0.04) !important;
 }
 
-.library-container-zM_bj
-    .library-content-PgX4O
-    .selectable-inputs-container-hR3or
-    .select-input-container-H1VZ1 {
-    /* background-color: var(--overlay-color); */
-    flex-basis: 20rem;
-    flex-grow: 0;
-    flex-shrink: 1;
-    height: 3.2rem;
-    background: rgba(70, 70, 70, 0.22) !important;
-    box-shadow:
-        0 8px 32px rgba(0, 0, 0, 0.2),
-        0 4px 16px rgba(0, 0, 0, 0.1),
-        inset 0 1px 0 rgba(255, 255, 255, 0.15),
-        inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
-    backdrop-filter: var(--backdrop-filter) !important;
-    border: 1px solid rgba(255, 255, 255, 0.04) !important;
+.library-container-zM_bj .library-content-PgX4O .meta-items-container-IKrND {
+    align-items: start;
 }
 
 /* ========================= SIDE DRAWER (EPISODE LIST) GLASS STYLING ========================= */
